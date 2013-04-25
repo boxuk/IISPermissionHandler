@@ -1,0 +1,22 @@
+{
+    "name": "boxuk/composer-iis-permission-handler",
+    "description": "Composer script handling iis permissions",
+    "minimum-stability": "stable",
+    "keywords": ["iis", "permissions"],
+    "repositories": [{
+        "type": "composer",
+        "url": "https://artifacts.boxuk.net/c11a028e-4ff1-41f6-9646-fb9e121f473f/satis/"
+    }],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "BoxUK\\IISPermissionHandler": "" }
+    },
+    "target-dir": "BoxUK/IISPermissionHandler",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
