@@ -27,7 +27,8 @@ echo ""
 
 foreach ($i in $args)
 {
-    icacls "$i" /grant IUSR:"(OI)(CI)"F /t
+	icacls "$i" /grant:r IUSR:F /t
+	icacls "$i" /grant:r IUSR:"(OI)(CI)"F /t
 }
 
 #Start IIS
