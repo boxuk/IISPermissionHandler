@@ -73,7 +73,7 @@ class ScriptHandler
             }
         }
 
-        return self::$powerShell . ' ' . $permsScript . ' ' . escapeshellarg(implode(" ", $directories));
+        return self::$powerShell . ' -ExecutionPolicy Bypass ' . $permsScript . ' ' . escapeshellarg(implode(" ", $directories));
     }
 
     /**
